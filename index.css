@@ -1,0 +1,135 @@
+/*
+For inline svg, replace '#' with '%23' inside the attribute of the <svg> tag
+*/
+body {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'><path fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/></svg>");
+    display: flex;
+    justify-content: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.mainSummaryDiv {
+    /* background-color: hsl(225, 100%, 98%); */
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0, -50%);
+    border-radius: 10px;
+}
+
+.heroImage {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.titleText {
+    font-size: x-large;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.descriptionText {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    width: 350px;
+    position: relative;
+    left: 50px;
+    line-height: 25px;
+}
+
+.planSummaryDiv {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 350px;
+    height: 80px;
+    position: relative;
+    left: 50px;
+    display: grid;
+    grid-template-columns: 20px [first] 70px [second] 100px [third] 80px [fourth] auto [last];
+    grid-template-rows: 15px [start] 25px [middle] 25px [end] 15px;
+}
+
+.planSummaryPartA {
+    grid-column-start: first;
+    grid-column-end: second;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0, -50%);
+}
+
+.planSummaryPartB1 {
+    grid-column-start: second;
+    grid-column-end: third;
+    grid-row-start: start;
+    grid-row-end: middle;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 900;
+}
+
+.planSummaryPartB2 {
+    grid-column-start: second;
+    grid-column-end: third;
+    grid-row-start: middle;
+    grid-row-end: end;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0, -50%);
+    color: hsl(224, 23%, 55%);
+}
+
+.planSummaryPartC {
+    grid-column-start: fourth;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0, -50%);
+    font-size: small;
+}
+
+.planSummaryPartC:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.proceedButton {
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(78, 18, 218);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+    box-shadow: 0px 10px 15px rgb(178, 182, 233);
+}
+
+.proceedButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background-color: transparent;
+    border: transparent;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+.cancelButton:hover {
+    color:hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
