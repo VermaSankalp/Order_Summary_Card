@@ -1,8 +1,16 @@
 /*
+Things still to do:
+Optimise for mobile screens
+*/
+
+/*
 For inline svg, replace '#' with '%23' inside the attribute of the <svg> tag
 */
 body {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'><path fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/></svg>");
+    /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'><path fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/></svg>"); */
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
     display: flex;
     justify-content: center;
     font-family: "Red Hat Display", sans-serif;
@@ -10,7 +18,7 @@ body {
 
 .mainSummaryDiv {
     /* background-color: hsl(225, 100%, 98%); */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 450px;
     height: 600px;
     text-align: center;
@@ -68,7 +76,8 @@ body {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .planSummaryPartB2 {
@@ -80,6 +89,7 @@ body {
     top: 50%; 
     transform: translate(0, -50%);
     color: hsl(224, 23%, 55%);
+    font-size: 14px;
 }
 
 .planSummaryPartC {
