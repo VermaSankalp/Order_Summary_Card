@@ -1,13 +1,4 @@
-/*
-Things still to do:
-Optimise for mobile screens
-*/
-
-/*
-For inline svg, replace '#' with '%23' inside the attribute of the <svg> tag
-*/
 body {
-    /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'><path fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/></svg>"); */
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: repeat-x;
     background-color: hsl(225, 100%, 94%);
@@ -17,7 +8,6 @@ body {
 }
 
 .mainSummaryDiv {
-    /* background-color: hsl(225, 100%, 98%); */
     background-color: rgb(255, 255, 255);
     width: 450px;
     height: 600px;
@@ -135,11 +125,46 @@ body {
     cursor: pointer;
 }
 
-/* .attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
+@media screen and (max-width: 375px) {
+    .mainSummaryDiv {
+        width: 275px;
+        height: 450px;
+    }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-} */
+    .heroImage {
+        width: 275px;
+        height: 125px;
+    }
+
+    .titleText {
+        font-size: large;
+    }
+
+    .descriptionText {
+        font-size: 12px;
+        width: 200px;
+        left: 40px;
+        line-height: 20px;
+    }
+
+    .planSummaryDiv {
+        width: 250px;
+        height: 60px;
+        left: 10px;
+        grid-template-columns: 10px [first] 60px [second] 70px [third] 50px [fourth] auto [last];
+        grid-template-rows: 10px [start] 20px [middle] 20px [end] 10px;
+    }
+
+    .planSummaryPartB1 {
+        font-size: 11px;
+    }
+
+    .planSummaryPartB2 {
+        font-size: 11px;
+    }
+
+    .proceedButton {
+        width: 250px;
+        font-size: 11px;
+    }
+}
