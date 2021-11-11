@@ -1,6 +1,6 @@
 body {
     background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
     display: flex;
     justify-content: center;
@@ -16,6 +16,7 @@ body {
     top: 50%; 
     transform: translate(0, -50%);
     border-radius: 10px;
+    box-shadow: 0px 10px 20px rgb(178, 182, 233);
 }
 
 .heroImage {
